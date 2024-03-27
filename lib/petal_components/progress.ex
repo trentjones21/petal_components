@@ -19,7 +19,7 @@ defmodule PetalComponents.Progress do
     <div {@rest} class={["pc-progress--#{@size}", "pc-progress", "pc-progress--#{@color}", @class]}>
       <span
         class={["pc-progress__inner--#{@color}", "pc-progress__inner"]}
-        style={"width: #{Float.round(@value/@max*100, 2)}%"}
+        style={"width: #{Float.round(@value/@max*100, 6)}%"}
       >
         <%= if @size == "xl" do %>
           <span class="pc-progress__label">
